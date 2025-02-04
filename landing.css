@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: "lores-15", sans-serif;
+}
+
+.container {
+    display: flex; /* Create a flex container */
+    width: 100%;
+    height: 100vh; /* Make it full height */
+}
+
+.left-side {
+    flex: 2; /* Takes 1/3 of the container */
+    background-color: #FFEEF0; /* pink */
+    padding: 20px;
+    box-sizing: border-box; /* Make sure padding doesn't affect width */
+}
+
+.right-side {
+    flex: 2; /* Takes 2/3 of the container */
+    background-color: #FFEEF0; /* pink */
+    padding: 20px;
+    box-sizing: border-box; /* Make sure padding doesn't affect width */
+    align-items: center;
+    justify-content: center; /* centers content vertically */
+}
+
+/* Optional: Make sure the text content looks nice */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Container for GIFs with borders and padding */
+.gif-box {
+    display: inline-block; /* Makes the box adjust to the size of its content */
+    position: relative;
+    text-align: center;     /* Center the GIF inside the box */
+    background-color: #FDF8F0; /* Cream color */
+    border-radius: 8px;    /* Optional: Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for consistency */
+    margin: 10px; /* adds space between GIF boxes*/
+}
+
+.gif-box img {
+    display: block;
+    max-width: 100%; /* Ensure the GIF scales to fit the container */
+    max-height: 100%; /* Ensure the GIF scales to fit the container */
+    object-fit: contain;
+}
+
+.gif-label {
+    position: absolute; /* Position the label on top of the GIF */
+    top: 0; /* Align the label at the top of the box */
+    left: 50%; /* Center the label horizontally */
+    transform: translateX(-50%); /* Adjust the centering */
+    font-size: 18px;
+    font-family: "lores-15", sans-serif;
+    margin-bottom: 2px; /* Space between the label and the GIF */
+    color: black;
+    margin: 0; /* Remove default margin */
+    background-color: transparent; /* No background color */
+    padding: 15px 0; /* Optional: small padding around the label */
+}
+
+
+
+
+
+
+
+/* Ensure each GIF maintains its natural size */
+#rotatingtops img, #rotatingskirts img, #rotatingpurses img {
+    object-fit: contain; /* Ensures the aspect ratio of the image is maintained */
+    max-width: 375px;  /* Adjust this value to the desired size */
+    max-height: 375px; /* Adjust this value to the desired size */
+}
+
+.camerapics {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: -10px auto;
+}
+
+
+.camerapics {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.camerapics:hover {
+    transform: rotate(-5deg); 
+}
+
+.star3 {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 420px;
+    z-index: 10;
+
+}
+
+.silverstar {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 340px;
+    left: 160px;
+    z-index: 10;
+
+}
+
+.clump2 {
+    width: 200px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 400px;
+}
+
+.letsplay {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.dressup {
+    width: 625px;
+    height: auto;
+    display: block;
+    margin-top: 5px;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+
+.clump1 {
+    width: 200px;
+    height: auto;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: "lores-15", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: #e59cb7; /* Adjust button color */
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    right: 120px; /* Moves it 20px from the right */
+    top: 525px;
+}
+
+.start-button:hover {
+    background-color: #FDF8F0; /* Darker color on hover */
+}
